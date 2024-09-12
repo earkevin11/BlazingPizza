@@ -1,0 +1,60 @@
+<div class="form-field">
+    <label>Name:</label>
+    <div>
+        <InputText @bind-Value="Address.Name" />
+        <ValidationMessage For="@(() => Address.Name)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Mobile Number:</label>
+    <div>
+        <InputText @bind-Value="Address.MobileNumber" />
+        <ValidationMessage For="@(() => Address.MobileNumber)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Address 1:</label>
+    <div>
+        <InputText @bind-Value="Address.Line1" />
+        <ValidationMessage For="@(() => Address.Line1)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Address 2:</label>
+    <div>
+        <InputText @bind-Value="Address.Line2" />
+        <ValidationMessage For="@(() => Address.Line2)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>City:</label>
+    <div>
+        <InputText @bind-Value="Address.City" />
+        <ValidationMessage For="@(() => Address.City)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>State:</label>
+    <div>
+        <InputText @bind-Value="Address.State" />
+        <ValidationMessage For="@(() => Address.State)" />
+    </div>
+</div>
+
+<div class="form-field">
+    <label>Postal code:</label>
+    <div>
+        <InputText @bind-Value="Address.PostalCode" />
+        <ValidationMessage For="@(() => Address.PostalCode)" />
+    </div>
+</div>
+
+@code {
+    [Parameter] public Address Address { get; set; }
+
+}
